@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+<div style="background-color:#FF4500;color:white;padding:20px;">
+<a href="home.html" style="text-decoration:none;"><img src="lg.png" style="float:left;margin-top:10px;margin-right:10px;border:none;border-radius:50px;width:50px;height:50px;"></a>
+<h2><a href="home.html" style="text-decoration:none;">FlyJET</a></h2>
+</div>
+</body>
+</head>
+<body>
+<div id="user">
+<div style="font-size:30px;font-family:sans-serif;text-align:center;color:black;padding:3px;">
+<p><h2>User Details</h2></p>
+</div>
+</body>
+<head>
+
+<meta charset="ISO-8859-1">
+<title>User Details</title>
+<script>
+function myFunction() {
+    document.getElementById("signup").reset();
+}
+function signup_onsubmit()
+{
+	if(document.signup.f1.value=="")
+	 {
+		alert("Please enter the LoginId");
+		document.signup.f1.focus();
+		return false;
+	 }
+	if(document.signup.f2.value=="")
+	 {
+		alert("Please enter the password");
+		document.signup.f2.focus();
+		return false;
+	 }
+	if(document.signup.f3.value=="")
+	 {
+		alert("Please enter the Retype password");
+		document.signup.f3.focus();
+		return false;
+	 }
+	 if(document.signup.f2.value!=document.signup.f3.value)
+	 {
+		alert("Retype password should be same as password");
+		document.signup.f3.focus();
+		return false;
+	 }
+	 if(document.signup.f4.value=="")
+	 {
+		alert("Please enter the name");
+		document.signup.f4.focus();
+		return false;
+	 }
+	 if(document.signup.f7.value=="")
+	 {
+		alert("Enter House No.");
+		document.signup.f7.focus();
+		return false;
+	 }
+	 if(document.signup.f8.value=="")
+	 {
+		alert("Enter the City");
+		document.signup.f8.focus();
+		return false;
+	 }
+	 if(document.signup.f9.value=="")
+	 {
+		alert("Enter the State");
+		document.signup.f9.focus();
+		return false;
+	 }
+	 if(document.signup.f10.value=="")
+	 {
+		alert("Enter Pincode");
+		document.signup.f10.focus();
+		return false;
+	 }
+	 if(document.signup.f11.value=="")
+	 {
+		alert("Enter Mobile No.");
+		document.signup.f11.focus();
+		return false;
+	 }
+	 if(document.signup.f12.value=="")
+	 {
+		alert("Enter Email ID");
+		document.signup.f12.focus();
+		return false;
+	 }
+	 if(document.signup.f12.value=="")
+	 {
+		alert("Enter Email ID");
+		document.signup.f12.focus();
+		return false;
+	 }
+	return true;
+}
+</script>
+</head>
+<body>
+<center>'
+<form name=signup method=post action="Userinfo1" onsubmit="return signup_onsubmit()">
+
+<table >
+
+<TR> 
+            <TD bgcolor="#FF4500" colspan="2"><FONT 
+            size=2><strong><font color="#ffffcc" face="Verdana" 
+           >Login Details</font></strong> </FONT> </TD>
+          </TR>
+          <TR> 
+        <TD><FONT size=2>Enter Flight ID :</FONT> </TD>
+            <td> 
+              <input name="f1" maxLength=8>
+              <FONT color=red>*</FONT></td>
+</TR>
+          <TR> 
+            <TD><FONT size=2>Name :</FONT> </TD>
+            <td><FONT size=2> 
+              <input name="f4">
+              </FONT><FONT color=red>* </FONT></td>
+          </TR>
+
+          <TR> 
+            <TD><FONT size=2>Password :</FONT> </TD>
+            <td> 
+              <input type=password maxLength=8 name="f2">
+              <FONT color=red>* </FONT></td>
+          </TR>
+          <TR> 
+            <TD><FONT size=2>ReType Password :</FONT> </TD>
+            <td><FONT size=2> 
+              <input type=password maxLength=8 name="f3">
+              <FONT color=red>*</FONT></FONT></td>
+          </TR>
+          <TR> 
+            <TD colspan="2"><font  face="Verdana" SIZE="2"> Maximum of 4 digits</font></TD>
+          </TR>
+          <TR> 
+            <TD bgcolor="#FF4500" colspan="2"><FONT 
+            size=2><strong><font color="#ffffcc" face="Verdana" 
+           >Personal Details</font></strong> </FONT> </TD>
+          </TR>
+
+          <TR> 
+            <TD><FONT size=2>Sex :</FONT> </TD>
+            <td><FONT size=2> 
+              <input type="radio" name="f5" value="Male" CHECKED>
+              Male&nbsp; 
+              <input type="radio" name="f5" value="Female">
+              Female </FONT> </td>
+          </TR>
+          <TR> 
+            <TD valign=top><FONT size=2>Date of Birth :
+            
+            <td colspan="2"><input type="date" name="f6"></td>
+            </FONT></TD>
+         </TR>
+          <TR> 
+            <TD bgcolor="#FF4500" colspan="2"><FONT 
+            size=2><strong><font color="#ffffcc" face="Verdana" 
+           >Residential/Office Address</font></strong> </FONT> </TD>
+          </TR>
+          <TR> 
+            <TD valign=top><FONT size=2>House No:</FONT> </TD>
+            <td><FONT size=2>
+              <INPUT name="f7">
+              </FONT><FONT color=red>* </FONT></td>
+          </TR>
+          <TR> 
+            <TD valign=top><FONT size=2>City Name:</FONT> </TD>
+            <td><FONT size=2>
+              <INPUT name="f8">
+              <FONT color=red>* </FONT></FONT></td>
+          </TR>
+          <TR> 
+            <TD valign=top><FONT size=2>State:</FONT> </TD>
+            <td><FONT size=2>
+              <INPUT name="f9">
+              <FONT color=red>* </FONT></FONT></td>
+          </TR>
+          <TR> 
+            <TD><FONT size=2>Pin Code:</FONT> </TD>
+            <td><FONT size=2> 
+              <input name="f10"><FONT color=red>* </FONT>
+              </FONT></td>
+          </TR>
+          <TR> 
+            <TD bgcolor="#FF4500" colspan="2"><FONT 
+            size=2><strong><font color="#ffffcc" face="Verdana" 
+           >Contact Details</font></strong> </FONT> </TD>
+          </TR>
+          <TR> 
+            <TD><FONT size=2>Mobile No :</FONT> </TD>
+            <td><FONT size=2> 
+              <input name="f11">
+              </FONT><FONT color=red>* </FONT></td>
+          </TR>
+          <TR> 
+            <TD><FONT size=2>E-Mail ID :</FONT> </TD>
+            <td><FONT size=2> 
+              <input name="f12">
+              </FONT><FONT color=red>* </FONT></td>
+          </TR>
+          <TR> 
+            <TD bgcolor="#FF4500" colspan="2"><FONT 
+            size=2><strong><font color="#ffffcc" face="Verdana" 
+           >Passenger Details</font></strong> </FONT> </TD>
+          </TR>
+          <TR> 
+            <TD><FONT size=2>Enter Passenger No. :</FONT> </TD>
+            <td><FONT size=2> 
+              <input name="f13">
+              </FONT><FONT color=red>* </FONT></td>
+          </TR>
+                    <TR> 
+            <TD><FONT size=2>Passenger Name :</FONT> </TD>
+            <td><FONT size=2> 
+            <textarea rows="4" cols="15" name="f14"></textarea>
+              </FONT><FONT color=red>* </FONT></td>
+          </TR>
+          <TR> 
+            <TD colspan="2"><font  face="Verdana" SIZE="2">Use comma while writing more than one passenger's name</font></TD>
+          </TR>
+          <TR> 
+            <TD align=right colspan=2>
+              <div align="center"><br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <FONT face=verdana size=2 color=red> 
+                Fields with (*) are manadatory</FONT> &nbsp; &nbsp; &nbsp; &nbsp;</div>
+            </TD>
+          </TR>
+          <TR> 
+            <TD align=right colspan=2> 
+              <div align="center"> 
+                <input type=submit name=submit1 value=Next>
+                <input type=reset name=" Reset " value=Reset onclick="myFunction()">
+              </div>
+            </TD>
+          </TR>
+        </TABLE>
+</font>		
+		</form>
+</td>
+<td width="20%" height=460>
+      <TABLE WIDTH="100%" CELLSPACING=1 CELLPADDING=1>
+		<TR>
+			<TD></TD>
+		</TR>
+	</TABLE>
+</td>
+ </tr>
+
+</table>
+</form>
+</center>
+
+</body>
+</html>

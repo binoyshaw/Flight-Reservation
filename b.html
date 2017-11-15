@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+<div style="background-color:#FF4500;color:white;padding:20px;">
+<a href="home.html" style="text-decoration:none;"><img src="lg.png" style="float:left;margin-top:10px;margin-right:10px;border:none;border-radius:50px;width:50px;height:50px;"></a>
+<h2><a href="home.html" style="text-decoration:none;">FlyJET</a></h2>
+</div>
+</body>
+</head>
+<head>
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="style3.css">
+</head>
+<body>
+<div id="slider">
+<img class="slides" src="a.jpg">
+<img class="slides" src="Kolkata.jpg">
+<img class="slides" src="b.jpg">
+<img class="slides" src="ndd.jpg">
+<img class="slides" src="h.jpg">
+<button class="btn" onclick="plusIndex(-1)" id="btn1">&#10094;</button>
+<button class="btn" onclick="plusIndex(1)" id="btn2">&#10095;</button>
+</div>
+</body>
+<script>
+	var index = 1;
+	function plusIndex(n){
+		index = index + 1;
+		showImage(index);
+	}
+	
+	showImage(1);
+	function showImage(n){
+		var i;
+		var x = document.getElementsByClassName("slides");
+		//alert(x.length);
+		if(n > x.length){ index = 1}
+		if(n < 1){ index = x.length}
+		for(i=0;i<x.length;i++){
+			x[i].style.display = "none";
+		}
+		x[index-1].style.display = "block";
+	}
+	autoSlide();
+	function autoSlides(){
+		var i;
+		var x = document.getElementsByClassName("slides");
+		for(i=0;i<x.length;i++){
+			x[i].style.display = "none";
+		}
+		if(index > x.length){ index = 1}
+		x[index-1].style.display = "block";
+		index++;
+		setTimeout(autoSlide,2000);
+	}
+</script>
+</html>

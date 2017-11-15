@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html >
+<head>
+<body>
+<div style="background-color:#FF4500;color:white;padding:20px;width:1325px">
+<a href="home.html" style="text-decoration:none;"><img src="lg.png" style="float:left;margin-top:10px;margin-right:10px;border:none;border-radius:50px;width:50px;height:50px;"></a> 
+<h2><a href="home.html" style="text-decoration:none;">FlyJET</a></h2>
+</div>
+</body>
+</head>
+<head>
+  <meta charset="UTF-8">
+  <title>sign up</title>
+<link rel="stylesheet" href="sup.css">
+<script>
+function validator(){
+	var mail = document.myform.f1.value;
+	var mobile = document.myform.f2.value;
+	var password = document.myform.f3.value;	
+    var validmobile = /[7-9]{1}[0-9]{9}$/;
+    var validmail = /[a-zA-Z0-9._-]+[@]{1}[a-z]+[.]{1}[a-zA-Z]{3}$/;
+ 
+    if(mail==""){
+    	alert("Enter Email Id");
+    	return false;
+    }
+    if(!(validmail.test(mail))){
+    	alert("Enter correct Email-id");
+    	return false;
+    }
+    if(mobile==""){
+    	alert("Enter Mobile No.");
+    	return false;
+    }
+    if(isNaN(mobile)){
+    	alert("Invalid mobile no.");
+    	return false;
+    }
+    if(!(validmobile.test(mobile))){
+    	alert("Mobile no. not correct");
+    	return false;
+    }
+    if(password==""){
+    	alert("Enter Password");
+    	return false;
+    }
+    return true;
+}
+</script> 
+</head>
+
+<body>
+<form name="myform" action="SignUp" method="post" onsubmit="return validator()">
+  <div id="login-box">
+  <div class="left">
+    <h1>Sign up</h1>
+    
+    <input type="text" name="f1" placeholder="E-mail">
+    <input type="text" name="f2" placeholder="Mobile Number">
+    <input type="password" name="f3" placeholder="Password">
+    
+    <input type="submit" name="signup_submit" value="Sign Up">
+  </div>
+  
+  <div class="right">
+    <span class="loginwith">Sign in with<br />social network</span>
+    
+    <button class="social-signin facebook"><a onclick="href='https://www.facebook.com/'" style="text-decoration:none;">Log in with facebook</a></button>
+    <button class="social-signin twitter"><a onclick="href='https://twitter.com/login'" style="text-decoration:none;">Log in with Twitter</a></button>
+    <button class="social-signin google"><a onclick="href='https://gsuite.google.com/intl/en_in/products/googleplus/?utm_source=google&utm_medium=cpc&utm_campaign=japac-IN-all-en-dr-bkws-all-all-trial-e-dr-1002233&utm_content=text-ad-none-none-DEV_c-CRE_146217461229-ADGP_BKWS%20%7C%20EXA%20~%20Gplus_%5BM:1%5D_IN_EN-KWID_43700012555079583-kwd-529845927-userloc_1007828&utm_term=KW_google%2B&gclid=CjwKEAjw16HLBRDF9L2UmOCH7U8SJAASVESoOwIKRDQ9pEvRblrD8QcMxmKaceyvGhMHZXhHnUkQjRoCZGnw_wcB&gclsrc=aw.ds&dclid=CMKOkv6RidUCFQ4TaAodnPgN7Q'" style="text-decoration:none;">Log in with Google+</a></button>
+  </div>
+  <div class="or">OR</div>
+</div>
+  
+</form>
+</body>
+</html>

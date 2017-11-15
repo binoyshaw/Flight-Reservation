@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<body>
+<div style="background-color:#FF4500;color:white;padding:20px;">
+<a href="home.html" style="text-decoration:none;"><img src="lg.png" style="float:left;margin-top:10px;margin-right:10px;border:none;border-radius:50px;width:50px;height:50px;"></a>  
+<h2><a href="home.html" style="text-decoration:none;">FlyJET</a></h2>
+</div>
+</body>
+</head>
+<head>
+<link rel="stylesheet" type="text/css" href="signup.css">
+<meta charset="ISO-8859-1">
+<title>Sign Up</title>
+
+<script>
+function validator(){
+	var mail=document.myform.f1.value;
+	var mobile=document.myform.f2.value;
+	var password=document.myform.f3.value;	
+    var validmobile=/[7-9]{1}[0-9]{9}$/;
+    var validmail=/[a-zA-Z0-9._-]+[@]{1}[a-z]+[.]{1}[a-zA-Z]{3}$/;
+ 
+    if(mail==""){
+    	alert("Enter Email Id");
+    	return false;
+    }
+    if(!(validmail.test(mail))){
+    	alert("Enter correct Email-id");
+    	return false;
+    }
+    if(mobile==""){
+    	alert("Enter Mobile No.");
+    	return false;
+    }
+    if(isNaN(mobile)){
+    	alert("Invalid mobile no.");
+    	return false;
+    }
+    if(!(validmobile.test(mobile))){
+    	alert("Mobile no. not correct");
+    	return false;
+    }
+    if(password==""){
+    	alert("Enter Password");
+    	return false;
+    }
+    return true;
+}
+</script>
+</head>
+
+<body>
+<center>
+<form name="myform" action="SignUp" method="post" onsubmit="return validator()">
+<div id="signup">
+<table align=center border=0 cellPadding=2 cellSpacing=2 width="70%">
+	<tr>
+	<td><input type="text" placeholder="Enter Email ID" name="f1"><FONT color=red>*</FONT></td>
+	
+	</tr>
+	<tr>
+	<td><input type="text" placeholder="Enter Mobile number" name="f2"><FONT color=red>*</FONT></td>
+	</tr>
+	<tr>
+	<td><input type="password" placeholder="Enter Password" name="f3"><FONT color=red>*</FONT></td>
+	</tr>
+	<tr>
+	</div>
+	<tr>
+	<td><input type="submit" name="signup-btn" value="Sign Up" style="background-color:#3374FF;width:225px;height:35px"></td><br>
+	</tr>
+	<tr>
+	<td><font><a href="customer.html" style="text-decoration:none;"><h2>Have an account ?</h2></a></font></td>
+	</tr>
+</table>	
+
+</form>
+</center>
+</body>
+</html>

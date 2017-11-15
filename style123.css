@@ -1,0 +1,66 @@
+
+
+
+
+
+input {
+  background-image: none;
+  border: none;
+  font: 100%/1.5em "Varela Round", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.container {
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+
+#Delete {
+  width: 400px;
+}
+
+#Delete h2 {
+  background: #FF4500;
+  border-radius: 20px 20px 0 0;
+  color: #fff;
+  font-size: 28px;
+  padding: 20px 26px;
+}
+
+
+
+#Delete fieldset {
+  background: #fff;
+  border-radius: 0 0 20px 20px;
+  padding: 20px 26px;
+}
+
+
+
+#Delete fieldset p:last-child {
+  margin-bottom: 0;
+}
+
+
+
+
+
+#Delete fieldset input[type="submit"] {
+  background: red;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  padding: 4px 0;
+  width: 100px;
+}
+
+#Delete fieldset input[type="submit"]:hover {
+  background: #28ad63;
+}

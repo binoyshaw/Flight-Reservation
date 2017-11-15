@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<div>
+<a href="home.html" style="text-decoration:none;"><img src="lg.png" style="position:absolute;float:left;margin-top:20px;margin-left:20px;margin-right:10px;border:none;border-radius:50px;width:50px;height:50px;"></a>
+</div>
+<link rel="stylesheet" type="text/css" href="style2.css">
+<meta charset="ISO-8859-1">
+<title>Corporate Login</title>
+<script>
+function validator(){
+	var name = document.form.t1.value;
+	var pass = document.form.t2.value;
+	if(name==""){
+		alert("Enter User name first");
+		return false;
+	}
+	if(pass==""){
+		alert("Enter Password");
+		return false;
+	}
+	return true;
+}
+</script>
+</head>
+<body>
+<div id="login">
+	<h2>Corporate Log In</h2>
+	<form name="form" action="MemLoginServlet" method="get" onsubmit="return validator()">
+	<input type="text" name="t1" placeholder="Enter Username">
+	<input type="password" name="t2" placeholder="Enter Password">
+	<input type="submit" id="login-btn" value="Log In">
+	</form>
+</div>
+</body>
+</html>

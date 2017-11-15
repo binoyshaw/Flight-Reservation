@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<title>Booking page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.myLink {display: none}
+</style>
+<body class="w3-light-grey">
+<form method="post" action="Search">
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
+    <a href="home.html" class="w3-bar-item w3-button"><b>Fly</b> JET</a>
+
+  </div>
+</div>
+<!-- Header -->
+<header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px">
+  <img class="w3-image" src="12.jpg" alt="" style:"width:1280px;height:800px;">
+  <div class="w3-display-middle" style="width:65%">
+    <div class="w3-bar w3-black">
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Flight');"><i class="fa fa-plane w3-margin-right"></i>Flight</button>
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Hotel');"><i class="fa fa-bed w3-margin-right"></i>Hotel</button>
+      
+    </div>
+
+    <!-- Tabs -->
+    <div id="Flight" class="w3-container w3-white w3-padding-16 myLink">
+      <h3>Travel the world with us</h3>
+      <div class="w3-row-padding" style="margin:0 -16px;">
+      
+        <div class="w3-half">
+          <label>From</label>
+          <input class="w3-input w3-border" type="text" placeholder="Departing from"name="t1">
+        </div>
+        <div class="w3-half">
+          <label>To</label>
+          <input class="w3-input w3-border" type="text" placeholder="Arriving at" name="t2">
+          </div>
+          
+          <div class="w3-half">
+          <label><i class="fa fa-calendar-o"></i> Check In</label>
+            <input class="w3-input w3-border" type="text" placeholder="YYYY-MM-DD" name="t3" required>
+          </div>
+          
+          
+          <div class="w3-half">
+            <label><i class="fa fa-calendar-o"></i> Check Out</label>
+            <input class="w3-input w3-border" type="text" placeholder="YYYY-MM-DD" name="t4" required>
+            
+          </div>
+          
+                    <TR> 
+            <TD><FONT size=4>Way:</FONT> </TD>
+            <td><FONT size=4> 
+              <input type="radio" name="way" value="One Way" CHECKED>
+              One Way&nbsp; 
+              <input type="radio" name="way" value="Round Trip">
+              Round Trip </FONT> </td>
+          </TR>
+          
+          
+          <div class="w3-half">
+                    <TR> 
+            <TD><FONT size=4>Date:</FONT> </TD>
+            <td><FONT size=4> 
+              <input type="radio" name="date" value="Fixed Dates" CHECKED>
+              Fixed Dates&nbsp; 
+              <input type="radio" name="date" value="Flexible Dates">
+              Flexible Dates </FONT> </td>
+          </TR>
+        </div>            
+          
+          
+          
+      </div>
+      <button class="w3-button w3-dark-grey" type="submit"><i class="fa fa-search w3-margin-right"></i> Search availability</button>
+      </form>
+    </div>
+
+    <div id="Hotel" class="w3-container w3-white w3-padding-16 myLink">
+      <h3>Find the best hotels</h3>
+      <p>Book a hotel with us and get the best fares and promotions.</p>
+      <p>We know hotels - we know comfort.</p>
+      <p><button class="w3-button w3-dark-grey" onclick="location.href='https://www.makemytrip.com/hotels/'">Search Hotels</a></button></p>
+    </div>
+
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px;">
+
+  <!-- Good offers -->
+  <div class="w3-container w3-margin-top">
+    <h3>Good Offers Right Now</h3>
+    <h6>Up to <strong>50%</strong> discount.</h6>
+  </div>
+  <div class="w3-row-padding w3-text-white w3-large">
+    <div class="w3-half w3-margin-bottom">
+      <div class="w3-display-container">
+        <img src="22.jpg" alt="Cinque Terre" style="width:525px;height:370px;">
+        <span class="w3-display-bottomleft w3-padding">Haridwar</span>
+      </div>
+    </div>
+    <div class="w3-half">
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="33.jpg" alt="New York" style="width:255px;height:180px;">
+            <span class="w3-display-bottomleft w3-padding">Srinagar</span>
+          </div>
+        </div>
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="44.jpg" alt="San Francisco" style="width:255px;height:180px;">
+            <span class="w3-display-bottomleft w3-padding">Mumbai</span>
+          </div>
+        </div>
+      </div>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="55.jpg" alt="Pisa" style="width:255px;height:170px;">
+            <span class="w3-display-bottomleft w3-padding">Kerala</span>
+          </div>
+        </div>
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="66.jpg" alt="Paris" style="width:255px;height:170px;">
+            <span class="w3-display-bottomleft w3-padding">Goa</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Explore Nature -->
+  <div class="w3-container">
+    <h3>Explore Nature</h3>
+    <p>Travel with us and see nature at its finest.</p>
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <img src="77.jpg" alt="" style="width:525px;height:450px">
+      <div class="w3-container w3-white">
+        <h3>India Gate</h3>
+        <p class="w3-opacity">Roundtrip from Rs 7999</p>
+        <p></p>
+        <button class="w3-button w3-margin-bottom"><a href="booka.html" style="text-decoration:none;">Buy Tickets</a></button>
+      </div>
+    </div>
+    <div class="w3-half w3-margin-bottom">
+      <img src="88.jpg" alt="" style="width:525px;height:450px">
+      <div class="w3-container w3-white">
+        <h3>Bodhgaya</h3>
+        <p class="w3-opacity">One-way from Rs 3999</p>
+        <p></p>
+        <button class="w3-button w3-margin-bottom"><a href="booka.html" style="text-decoration:none;">Buy Tickets</a></button>
+      </div>
+    </div>
+  </div>
+<script>
+// Tabs
+function openLink(evt, linkName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("myLink");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(linkName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+// Click on the first tablink on load
+document.getElementsByClassName("tablink")[0].click();
+</script>
+
+</body>
+</html>

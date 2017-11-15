@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<div>
+<a href="home.html" style="text-decoration:none;"><img src="lg.png" style="position:absolute;float:left;margin-top:20px;margin-left:20px;margin-right:10px;border:none;border-radius:50px;width:50px;height:50px;"></a>
+</div>
+<link rel="stylesheet" type="text/css" href="style1.css">
+<meta charset="ISO-8859-1">
+<title>Customer Login</title>
+<script>
+function validator(){
+	var uname = document.form1.t1.value;
+	var pass = document.form1.t2.value;
+	if(uname==""){
+		alert("Enter Email ID first");
+		return false;
+	}
+	if(pass==""){
+		alert("Enter Password");
+		return false;
+	}
+	return true;
+}
+</script>
+</head>
+<body>
+<div id="login">
+	<h2>Log In</h2>
+	<form name="form1" action="CustomerLoginServlet" method="get" onsubmit="return validator()">
+	<input type="text" name="t1" placeholder="Enter Email">
+	<input type="password" name="t2" placeholder="Enter Password">
+	<input type="submit" id="login-btn" value="Log In">
+	</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+#signup {
+	background: url("default.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#signup input{
+	width: 200px;
+	height:35px;
+	text-align: center;
+	border-radius: 4px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom:1px;
+	padding: 10px;
+}
+a:hover {
+    color: red;
+}

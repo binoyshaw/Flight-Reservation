@@ -1,0 +1,121 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<body>
+<div style="background-color:#FF4500;color:white;padding:20px;width:1366px">
+<a href="home.html" style="text-decoration:none;"><img src="lg.png" style="float:left;margin-right:10px;border:none;border-radius:50px;width:50px;height:50px;"></a> 
+<h4 style="margin-top:10px;">FlyJET</h4>
+</div>
+</body>
+</head>
+
+
+  <head>
+   
+    
+   
+   
+    <title>FlyJET Citizen's Charter</title>
+    <link rel="stylesheet" href="stylesc.css">
+    <link rel="stylesheet" href="materialc.min.css">
+    
+    
+  </head>
+  <body>
+    
+<div id="slider">
+<img class="slides" src="a.jpg">
+<img class="slides" src="Kolkata.jpg">
+<img class="slides" src="b.jpg">
+<img class="slides" src="ndd.jpg">
+<img class="slides" src="aaaa.jpg">
+<button class="btn" onclick="plusIndex(-1)" id="btn1">&#10094;</button>
+<button class="btn" onclick="plusIndex(1)" id="btn2">&#10095;</button>
+</div>
+    
+    
+    
+    
+   
+      </header>
+      
+      <div class="demo-container mdl-grid">
+        
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+            
+           <h2>Corporate Overview</h2>
+   
+      <p>FlyJET's mission is to become India’s preferred low-cost airline, delivering the lowest air fares with the highest consumer value, to price sensitive consumers. We hope to fulfill everyone’s dream of flying!</p>
+      <p>With India's economic and business growth, the percentage of traveling population is burgeoning. More and more Indians are traveling for both business and pleasure and everyone needs to save both time and money. FlyJET's vision is to address that and ensure that flying is for everyone.</p>
+ <h2>The power to fly for everyone</h2>
+ 
+ <p>With a dynamic fare structure, FlyJET offers fares that are affordable and significantly lower than most airlines. With contemporary interiors, modern graphics and vibrant colours, FlyJET is very much like today’s traveler - practical yet stylish. A FlyJET will feel ‘this is the smart, international way to travel, I've made the smart choice’. FlyJET is committed to make sure you feel good at the end of a flight, arriving at your destination - fresh and on time.</p> 
+  
+  
+  <h2>The power of performance</h2>
+  
+  <p>From aircraft to crew and ground staff the focus is on performance. Each SpiceJet employee is groomed to be smart, friendly, efficient and well-informed, ensuring that any interaction will make you feel welcome and looked after. Experienced pilots, well-trained cabin crew will make every flight a comfortable one. The philosophy is no-frills but high-performance.
+  </p>
+  
+  <h2>The power of safety</h2>
+  
+  <p>FlyJET invests heavily in safety, impeccable maintenance and a high level of expertise. Experienced pilots, engineers and maintenance crew go through rigorous training and are hand-picked for their technical knowledge and expertise. So you can rest assured that there is no cut-back in this key area of modern day flying.</p>
+  
+  <h2>The power behind the power to fly</h2>
+  
+  <p>FlyJET's key management personnel are all senior, seasoned professionals and have significant international experience in both launching and managing low-cost airlines. With thousands of cumulative man hours in the industry, the management is committed to bring to customers in India all the benefits of the global revolution in the skies. FlyJET aims to make travel comfortable, affordable and refreshingly efficient experience for all.</p>
+  
+  <p>Welcome on board India's newest, smartest and most affordable low-fare airline. India, get ready for the power to fly!</p>
+  
+  
+
+
+
+
+
+      
+      
+          </div>
+        </div>
+        
+      </main>
+    </div>
+    
+  </body>
+  
+  <script>
+	var index = 1;
+	function plusIndex(n){
+		index = index + 1;
+		showImage(index);
+	}
+	
+	showImage(1);
+	function showImage(n){
+		var i;
+		var x = document.getElementsByClassName("slides");
+		//alert(x.length);
+		if(n > x.length){ index = 1}
+		if(n < 1){ index = x.length}
+		for(i=0;i<x.length;i++){
+			x[i].style.display = "none";
+		}
+		x[index-1].style.display = "block";
+	}
+	autoSlide();
+	function autoSlides(){
+		var i;
+		var x = document.getElementsByClassName("slides");
+		for(i=0;i<x.length;i++){
+			x[i].style.display = "none";
+		}
+		if(index > x.length){ index = 1}
+		x[index-1].style.display = "block";
+		index++;
+		setTimeout(autoSlide,2000);
+	}
+</script>
+  
+</html>

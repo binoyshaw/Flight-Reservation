@@ -1,0 +1,18 @@
+body{
+	background: url("11.jpg") no-repeat center center;
+    background-size:100%;
+    background:cover;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	text-align:center;
+}
+html, body{
+	height:100%;
+}
+.container {
+	width:600px;
+	margin:0px auto;
+	font-family: 'Lobster', cursive;
+
+}
